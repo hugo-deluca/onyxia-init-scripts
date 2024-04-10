@@ -27,5 +27,5 @@ SQL_PASSWORD=$SQL_PASSWORD
 EOF
 
 # Run server
-IP_ADDRESS=$(hostname -I)
-python manage.py runserver $IP_ADDRESS 8000
+IP_ADDRESS=$(hostname -I | tr -d ' '):8000
+python manage.py runserver $IP_ADDRESS
