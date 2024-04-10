@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clone the repo
-git clone https://$1@gitlab.cerema.fr/datafoncier/acces-df/acces_df_api.git
+git clone https://$GITLAB_TOKEN@gitlab.cerema.fr/datafoncier/acces-df/acces_df_api.git
 
 # Install modules in venv
 cd acces_df_api
