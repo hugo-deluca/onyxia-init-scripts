@@ -8,8 +8,8 @@ cd acces_df_api
 pip install -r requirements.txt
 
 # Creating env file
-DOMAIN=$(echo "$VSCODE_PROXY_URI" | awk -F/ '{print $3}')
-SECONDARY_LINK="${DOMAIN%.*}-user.${DOMAIN#*.}"
+# DOMAIN=$(echo "$VSCODE_PROXY_URI" | awk -F/ '{print $3}') # ignored as VSCODE_PROXY_URI set after
+# SECONDARY_LINK="${DOMAIN%.*}-user.${DOMAIN#*.}"
 
 KEY=$(tr -dc "a-zA-Z0-9" < /dev/urandom | fold -w 32 | head -1)
 
