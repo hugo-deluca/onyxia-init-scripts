@@ -25,3 +25,7 @@ SQL_PORT=$SQL_PORT
 SQL_USER=$SQL_USER
 SQL_PASSWORD=$SQL_PASSWORD
 EOF
+
+# Run server
+IP_ADDRESS=$(hostname -I)
+python manage.py runserver $IP_ADDRESS:8000
