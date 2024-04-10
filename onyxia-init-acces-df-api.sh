@@ -28,4 +28,4 @@ EOF
 
 # Run server
 IP_ADDRESS=$(hostname -I)
-python manage.py runserver $IP_ADDRESS:8000
+python manage.py runserver $IP_ADDRESS 8000
