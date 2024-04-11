@@ -10,7 +10,7 @@ sudo apt-get install redis
 
 
 # Clone the repo
-# git clone https://$GITHUB_TOKEN@github.com/aherman59/managerdf
+git clone https://$GITHUB_TOKEN@github.com/aherman59/managerdf
 
 
 # Install modules in venv
