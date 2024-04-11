@@ -1,5 +1,7 @@
 #!/bin/bash
 
+GITHUB_TOKEN = $1
+
 # Install redis
 curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
 
@@ -10,7 +12,7 @@ sudo apt-get install redis
 
 
 # Clone the repo
-git clone https://github.com/aherman59/managerdf
+git clone https://$GITHUB_TOKEN@github.com/aherman59/managerdf
 
 
 # Install modules in venv
