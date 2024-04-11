@@ -10,12 +10,12 @@ sudo apt-get install redis
 
 
 # Clone the repo
-#git clone https://$GITHUB_TOKEN@github.com/aherman59/managerdf
+# git clone https://$GITHUB_TOKEN@github.com/aherman59/managerdf
 
 
 # Install modules in venv
-# cd managerdf
-# pip install -r requirements.
+cd managerdf
+pip install -r requirements.
 
 
 # Run API Livraisons server
